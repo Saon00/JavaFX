@@ -1,0 +1,21 @@
+/* SOURCE-DOCUMENTATION
+https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html#introscenegraph
+*/
+
+.root{
+-fx-background-color: #024f2d;
+-fx-font-size: 12pt;
+-fx-font-weight: bold;
+}
+
+.label{
+-fx-text-fill: #e6eaf0;
+}
+
+.button{
+-fx-background-color: #7b74a6;
+}
+
+.signupButtonColor{
+-fx-background-color: #946c6c;
+}
