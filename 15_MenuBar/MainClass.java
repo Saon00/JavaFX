@@ -50,9 +50,36 @@ public class Main extends Application {
         readOnly.setDisable(true);
         editMenu.getItems().add(readOnly);
 
+        // Help menu ( CheckMenuItem )
+        Menu helpMenu = new Menu("_Help");
+        CheckMenuItem showLines = new CheckMenuItem("Show Line Numbers");
+        showLines.setOnAction(event -> {
+            if(showLines.isSelected())
+                System.out.println("Showing The Line Number");
+            else
+                System.out.println("Hiding the line Numbers");
+        });
+        CheckMenuItem autoSave = new CheckMenuItem("Enable Auto-Save");
+        autoSave.setSelected(true); // by default selected
+        helpMenu.getItems().addAll(showLines, autoSave);
+
+         // Radio MenuItem
+        Menu difficultyMenu = new Menu("Difficulty");
+        ToggleGroup difficultyToggle = new ToggleGroup();
+
+        RadioMenuItem easy = new RadioMenuItem("Easy");
+        RadioMenuItem medium = new RadioMenuItem("Medium");
+        RadioMenuItem hard = new RadioMenuItem("Hard");
+
+        easy.setToggleGroup(difficultyToggle);
+        medium.setToggleGroup(difficultyToggle);
+        hard.setToggleGroup(difficultyToggle);
+
+        difficultyMenu.getItems().addAll(easy,medium,hard);
+        
         // Main Menu Bar
         MenuBar menuBar = new MenuBar();
-        menuBar.getMenus().addAll(fileMenu, editMenu);
+        menuBar.getMenus().addAll(fileMenu, editMenu, helpMenu, difficultyMenu);
 
         borderPane = new BorderPane();
         borderPane.setTop(menuBar);
