@@ -59,7 +59,8 @@ public class Main extends Application {
         grid.getChildren().addAll(nameLabel, nameInput, passLabel, passInput, loginButton,signupButton);
 
         Scene scene = new Scene(grid, 400, 200);
-        scene.getStylesheets().add("/sample/Design.css");
+        scene.getStylesheets().add("/sample/Design.css"); //for Intellij IDE
+        // scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm()); // for Eclipse IDE
         window.setScene(scene);
         window.show();
 
