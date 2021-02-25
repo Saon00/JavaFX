@@ -1,0 +1,22 @@
+/* SOURCE-DOCUMENTATION
+https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html#introscenegraph
+*/
+
+.parent{
+-fx-background-color: #242559;
+}
+
+.secondBox{
+-fx-background-color: #a0f294;
+}
+
+.buttons:hover{
+    -fx-background-color: #0b0c1f;
+}
+
+.u_p_design{
+-fx-background-color: transparent;
+-fx-border-color: #01030d;
+-fx-border-width: 0px 0px 2px 0px;
+-fx-prompt-text-fill: gray;
+}
