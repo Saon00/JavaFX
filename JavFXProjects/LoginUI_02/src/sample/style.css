@@ -1,0 +1,17 @@
+
+.blue-button{
+    -fx-background-color: #2196f3;
+    -fx-background-radius: 10px;
+    -fx-text-fill: black;
+
+}
+
+.buttons:hover{
+    -fx-background-color: #666eff;
+}
+
+.exitButton{
+        -fx-background-color: #b52222;
+        -fx-background-radius: 10px;
+        -fx-text-fill: white;
+}

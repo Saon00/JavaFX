@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/14.0.2.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeScreenController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="853.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label style="-fx-border-width: 5;" text="Welcome to BlackOsRa Programming">
+               <HBox.margin>
+                  <Insets left="250.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="230.0" layoutY="32.0" prefHeight="25.0" prefWidth="424.0" text="Here is your Personal Data informations:-">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="230.0" layoutY="100.0" text="First Name:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="230.0" layoutY="140.0" text="Last Name:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="230.0" layoutY="180.0" text="User Name:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="230.0" layoutY="220.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Text fx:id="fnt" layoutX="386.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saon" wrappingWidth="317.7294921875">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="lnT" layoutX="386.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sikder" wrappingWidth="317.7294921875">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="unT" layoutX="386.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="saon" wrappingWidth="317.7294921875">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="pT" layoutX="386.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234" wrappingWidth="317.7294921875">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <JFXButton fx:id="exitButton" layoutX="346.0" layoutY="311.0" onAction="#closeWindow" prefHeight="44.0" prefWidth="291.0" styleClass="exitButton" stylesheets="@../sample/style.css" text="Click here to close the window">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #212740;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
